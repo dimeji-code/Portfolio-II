@@ -11,7 +11,7 @@ const Landing = () => {
 
   useEffect(()=>{
     dispatch(toggleCurrent({currentPage: 'landing'}))
-    console.log('LANDING');
+    // console.log('LANDING : ', process.env.PUBLIC_URL);
     
 },[])
 
@@ -53,8 +53,8 @@ color: #e2e9f0;
 <>
      {modalState && <SkillsPage /> } 
 
-    <img src="./topRight.svg" alt="alt" style={{position:'absolute', right: '0', top:'0'}}/>
-    <img src="./bottomLeft.svg" alt="alt" className="bottomImg" /*style={{position:'absolute', left: '0', bottom:'0'}}*//>
+    <img src={process.env.PUBLIC_URL +"/topRight.svg"} alt="alt" style={{position:'absolute', right: '0', top:'0'}}/>
+    <img src={process.env.PUBLIC_URL + "/bottomLeft.svg"} alt="alt" className="bottomImg" /*style={{position:'absolute', left: '0', bottom:'0'}}*//>
     <div className='landingTop' 
     // style={{height:'100vh',display:'flex',flex:1,flexDirection:'column', justifyContent: 'center', alignItems: 'center', background:"url(./bg4.svg)",backgroundSize: '100% 100%',backgroundRepeat:'no-repeat'}} 
     >

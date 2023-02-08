@@ -18,7 +18,7 @@ const Header = () => {
   return (
     <div className="header">
       <div className="inner-header">
-          <div className="logo" onClick = {() => navigate("/")} >
+          <div className="logo" onClick = {() => navigate("/Portfolio-II")} >
             <Logo/>
           </div>
           {/* <div> */}
@@ -29,7 +29,7 @@ const Header = () => {
                     
                 </li>
                 <div className='iconButton' onClick={()=>{}}>
-                <a className='resume' href = {"./resume.pdf"} target = "_blank">
+                <a className='resume' href = {process.env.PUBLIC_URL +"/resume.pdf"} target = "_blank">
                   <ArticleIcon />
                 </a>
             </div>

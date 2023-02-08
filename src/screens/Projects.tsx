@@ -16,7 +16,7 @@ const Projects = () => {
             <Card 
             title="Software Development"
             subTitle="C++, QT creator, Desktop Applications, Mobile Applications and Games."
-            svg="./software.svg"
+            svg={process.env.PUBLIC_URL +"/software.svg"}
             
             />
           </Grid>
@@ -24,7 +24,7 @@ const Projects = () => {
             <Card 
             title="Fullstack Development"
             subTitle="Fullstack deployments. Relational & Non-Relational Databases"
-            svg="./fullstack.svg"
+            svg={process.env.PUBLIC_URL +"/fullstack.svg"}
 
             />
           </Grid>
