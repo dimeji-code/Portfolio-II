@@ -9,7 +9,6 @@ import { useDispatch, useSelector } from 'react-redux';
 import { toggleModal } from '../reducers/windowReducer';
 
 const Skills = (props:any) => {
-    const modalState = useSelector((state:any) => state.window.modalOpen)
     const dispatch = useDispatch()
     
     const H2 = styled('h2')`
@@ -44,7 +43,7 @@ const Skills = (props:any) => {
    ` 
 
   return (
-    <Body className='modalContainere'>
+    <Body >
        <div className="modal">
         <div className="closeIconContainer" onClick={()=>{dispatch(toggleModal({modalOpen:false}))}}>
             <CloseIcon/>

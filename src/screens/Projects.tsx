@@ -1,8 +1,6 @@
-import React, { useEffect } from 'react'
+import  { lazy } from 'react'
 import { Grid } from '@mui/material';
-import Card from '../components/Card';
-import { useDispatch } from 'react-redux';
-import { toggleCurrent } from '../reducers/windowReducer';
+const Card = lazy(()=> import('../components/Card'));
 
 const Projects = () => {
 

@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import  { useEffect } from 'react'
 import { Grid } from '@mui/material';
 import StarIcon from '@mui/icons-material/Star';
 import StarHalfIcon from '@mui/icons-material/StarHalf';
@@ -19,6 +19,7 @@ const ProjectsList = () => {
 
     
     },[])
+    
     const H2 = styled('h2')`
     color: #e2e2e9;
     font-family: 'Roboto', sans-serif;
@@ -40,12 +41,6 @@ const ProjectsList = () => {
         {image:"/quote.png",title:"Quote Tag",tools:"Swift (Xcode)",description:"Trivia game that tests knowledge on tv shows and movies by getting players to match famous quotes.",rating:4.5,link:"https://github.com/dimeji-code/Quote-Tag",},
     ]
     )
-    // const softList = [
-      
-    //     {image:"./therapy.png",title:"Denas electrotherapy simulation.",tools:"C++ (Qt Creator)",description:"Simulation of special electro-therapy hardware that administers shocks to cure different ailments.",rating:5,link:"https://github.com/dimeji-code/Therapy-software-QT",},
-    //     {image:"./city.png",title:"City_2 (Group project)",tools:"Processing 3",description:"An aerial-view shooter game in a city riddled with crime.",rating:5,link:"https://github.com/dimeji-code/City_2",},
-    //     {image:"./quote.png",title:"Quote Tag",tools:"Swift (Xcode)",description:"Trivia game that tests knowledge on tv shows and movies by getting players to match famous quotes.",rating:5,link:"https://github.com/dimeji-code/Quote-Tag",},
-    // ]
 
     const createRating = (num: number) => {
         var whole = Math.floor(num)
@@ -78,29 +73,29 @@ const ProjectsList = () => {
 
                 <div  style={{backgroundColor:'#fff', border:'0.4px solid #ccc', borderRadius:'5px', overflow:'hidden'}}>
                     <div  >
-                        <img
-                            className="card-img-top"
+                        <img                           
+                            loading='lazy'
                             src={process.env.PUBLIC_URL  +item.image}
                             alt="Card image cap"
                             style={{objectFit:'contain',maxWidth:'100%', maxHeight:'100%'}}
                         />
-                        <div className="card-body" style={{textAlign:'left', padding: '10px'}}>
+                        <div  style={{textAlign:'left', padding: '10px'}}>
                             <h3 className="card-title">{item.title}</h3>
                             {/* <h6 className="card-text">Collaboration simplified.</h6> */}
                             <a
                             href={item.link}
                             className="btn"
                             target = "_blank"
-                            style={{color: "#b8b9ed", border: "0.6px solid #b2b3ee", padding: "10px", textDecoration:'none', borderRadius: "5px"}}
+                            style={{color: "#a9aae6", border: "0.6px solid #7e7f9dba", padding: "10px", textDecoration:'none', borderRadius: "5px"}}
                             >See more</a>
                         </div>
-                        <div className="card-body" style={{textAlign:'left', padding: '10px'}}>
+                        <div  style={{textAlign:'left', padding: '10px'}}>
                             <p>Language: {item.tools}</p>
                             <p style={{textAlign:'left',display:'flex',justifyContent:'left',alignContent:'center',alignItems: 'center'}}>
                             Difficulty: {createRating(item.rating)}
                                 
                             </p>
-                            <p className="card-text">
+                            <p >
                             {item.description}
                             </p>
                         </div>
