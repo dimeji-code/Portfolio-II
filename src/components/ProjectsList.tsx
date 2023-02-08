@@ -66,6 +66,7 @@ const ProjectsList = () => {
   return (
     <div style={{height:'100vh',display:'flex',flex:1,flexDirection:'column',  alignItems: 'center', overflow:'scroll', paddingTop:'5%'}}>
         <H2>{type}</H2>
+        
         <Grid container spacing={6} sx={{paddingTop:'1%',paddingLeft:"8%",paddingRight:'8%',paddingBottom:'1%'}}>
             {webList.map((item:any) => { return(
 
