@@ -23,8 +23,7 @@
 .show{
   animation: showw 3s;
 }
-.logo{
-}
+
 .logo:hover{
   cursor: pointer;
 }
@@ -66,11 +65,6 @@
   border-bottom: 0.7px solid #ccc;
   cursor: pointer;
 }
-/* .bottomImg{
-  position:absolute;
-   left: 0; 
-   bottom:0;
-} */
 .landingTop{
   height:100vh;
   display:flex;
@@ -220,8 +214,8 @@ h2{
   padding:8px;
   min-width: 80px;
   border-radius: 4px;
-  border:  1px solid #989bbbc4;
-  color:  #6b6e71;
+  border:  1px solid #2e2f36c4;
+  color:  #54575a;
 
   
 }
@@ -234,6 +228,11 @@ h2{
 }
 .myCard:hover , .myCard:hover #viewProj{
   color: #ffffff;
+}
+.myCard:hover #viewProj{
+  color: #ffffff;
+  border:  1px solid #cecfd6c4;
+
 }
 .myCard:hover:before {
   cursor: pointer;
