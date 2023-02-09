@@ -15,7 +15,7 @@ const About = () => {
   return (
      <div className='white' style={{padding:"8%", lineHeight: "40px",display:'flex',flexDirection:'column',alignItems: "center"}}>
         <h2>About Me</h2>
-        <h4>"Hi there, I am a Carleton University Alumni with a Bach. Degree in Computer Science.
+        <h4 id="myDescription">"Hi there, I am a Carleton University Alumni with a Bach. Degree in Computer Science.
         I have short term work experience as a Jr. fullstack developer with exposure to tools like React, MongoDB and Typescript. 
         At my  previous job, I had the privilege of working with talented people from different time zones and I thrive on collaboration.
         C++ is also one of my core strengths for creating Desktop applications with QT creator.
@@ -24,15 +24,15 @@ const About = () => {
         <h2>Work Experience</h2>
         <div className="aboutContainer">
             <div className="aboutContainerHeader">
-                <h3>Ukemey Inc.</h3>
-                <h3>Sept 2021 - March 2022</h3>
+                <h3 className = "company">Ukemey Inc.</h3>
+                <h3 >Sept 2021 - March 2022</h3>
             </div>
             <div className="aboutHeader2">
                 <h4 style={{display:'flex',justifyContent: 'center', alignItems: 'center',margin:'5px'}}><LocationOnIcon/> Remote</h4>
                 <h4 style={{display:'flex',justifyContent: 'center', alignItems: 'center',margin:'5px'}}><WorkOutlineIcon />  Jr. Fullstack Developer</h4>
             </div>
             <div className="aboutContainerBody">
-                <p>Component creation, management and documentation with modern tools. Developed mobile and web based applications for clients of the company.</p>
+                <p className="description">Component creation, management and documentation with modern tools. Developed mobile and web based applications for clients of the company.</p>
                 <div className="toolslist">
                 <Grid container  > 
                     <Grid item><h3 className="aboutToolItem">Javascript</h3></Grid>

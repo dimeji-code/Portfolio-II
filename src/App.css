@@ -213,7 +213,26 @@ h2{
     color: #221414;
 
 }
-.myCard:hover {
+#viewProj{
+  background-color: transparent;
+  font-family: roboto, cursive;
+  font-size:16px;
+  padding:8px;
+  min-width: 80px;
+  border-radius: 4px;
+  border:  1px solid #989bbbc4;
+  color:  #6b6e71;
+
+  
+}
+#viewProj:hover{
+  cursor:pointer;
+  border: 1px solid #444a84c4;
+  box-shadow: 1px 1px 1.9px 1px rgba(138, 135, 140, 0.131);
+  background-color: #cce7f528;
+  transition: all .9s ease-in-out;
+}
+.myCard:hover , .myCard:hover #viewProj{
   color: #ffffff;
 }
 .myCard:hover:before {
@@ -222,8 +241,8 @@ h2{
   position: absolute;
   right: 0;
   top: 0;
-  width: 100%;
-  height: 100%;
+  width: 120%;
+  height: 120%;
   border-radius: 0;
   /* color: #43c554; */
 
@@ -345,7 +364,14 @@ h2{
 .toolslist{
   width: 90%;
 }
-
+.company{
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+}
+#myDescription{
+  font-size: 18px;
+  font-family: 'Roboto', sans-serif;
+}
 
 @media (max-width:685px) {
   .proj{
@@ -358,7 +384,10 @@ h2{
     height: 180vh;
     overflow: scroll;
   }
- 
+  #myDescription,.description{
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+  }
 }
 @media (max-width:750px) {
   .aboutContainer{
