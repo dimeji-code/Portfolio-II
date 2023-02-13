@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect } from 'react'
 import { styled } from '@mui/material/styles';
 import SkillsPage from "../components/Skills";
 import Projects from './Projects';
@@ -10,10 +10,8 @@ const Landing = () => {
   const dispatch = useDispatch()
 
   useEffect(()=>{
-    dispatch(toggleCurrent({currentPage: 'landing'}))
-    // console.log('LANDING : ', process.env.PUBLIC_URL);
-    
-},[])
+    dispatch(toggleCurrent({currentPage: 'landing'}))    
+  },[])
 
   const Skills = styled('button')`
 
@@ -50,31 +48,25 @@ color: #e2e9f0;
   return (
 
 
-<>
+  <>
      {modalState && <SkillsPage /> } 
 
     <img src={process.env.PUBLIC_URL +"/topRight.svg"} loading='lazy' alt="alt" className=" show" style={{position:'absolute', right: '0', top:'0'}}/>
     <img src={process.env.PUBLIC_URL + "/bottomLeft.svg"} loading='lazy' alt="alt" className="bottomImg show" style={{position:'absolute', left: '0', bottom:'0'}}/>
     <div className='landingTop' 
-    // style={{height:'100vh',display:'flex',flex:1,flexDirection:'column', justifyContent: 'center', alignItems: 'center', background:"url(./bg4.svg)",backgroundSize: '100% 100%',backgroundRepeat:'no-repeat'}} 
     >
-    {/* <div style={{height:'100vh',display:'flex',flex:1,flexDirection:'column', justifyContent: 'center', alignItems: 'center'}} > */}
-
         <div style={{textAlign:'center',flex:0.7}} className="show">
           <span>
-            {/* <p>hello, i'm </p> */}
             <Name className="">DIMEJI SITU</Name>
           </span>
           <H4 className="white">Fullstack, Mobile and Software Developer based in Ontario, Canada.</H4>
-          {/* <H4 className="white">I create responsive and modern webpages with React.</H4> */}
           <Skills onClick={()=>{dispatch(toggleModal({modalOpen: true}))}}> SKILLS</Skills>
         </div>
         
     </div>
       
     <Projects/>
-</>
-  )
-}
+  </>
+)}
 
 export default Landing

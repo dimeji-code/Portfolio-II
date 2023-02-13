@@ -1,11 +1,10 @@
-import React, { useState } from 'react'
 import { styled } from '@mui/material/styles';
 import StarIcon from '@mui/icons-material/Star';
 import StarHalfIcon from '@mui/icons-material/StarHalf';
 import StarBorderIcon from '@mui/icons-material/StarBorder';
 import CloseIcon from '@mui/icons-material/Close';
 import { Grid } from '@mui/material';
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { toggleModal } from '../reducers/windowReducer';
 
 const Skills = (props:any) => {
@@ -222,7 +221,7 @@ const Skills = (props:any) => {
                 <span>
                 <StarIcon sx={{ color:  '#3b0f3b7b'}}/>
                 <StarIcon sx={{ color:  '#3b0f3b7b'}}/>
-                <StarBorderIcon sx={{ color:  '#3b0f3b7b'}}/>
+                <StarIcon sx={{ color:  '#3b0f3b7b'}}/>
                 <StarBorderIcon sx={{ color:  '#3b0f3b7b'}}/>
                 <StarBorderIcon sx={{ color:  '#3b0f3b7b'}}/>
                 </span>

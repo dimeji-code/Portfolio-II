@@ -52,7 +52,6 @@ const ProjectsList = () => {
             stars.push(<StarIcon style={{color:'#877032c8'}}/>)                   
         }
         if (fraction > 0){
-        // for (let i = 1; i <= 5; i++) {
           stars.push(<StarHalfIcon style={{color:'#877032c8'}}/>);
         }
         for(var i = (whole+last); i < 5;i++){
