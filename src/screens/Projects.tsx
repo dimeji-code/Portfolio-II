@@ -27,7 +27,6 @@ const Projects = () => {
             />
           </Grid>
          </Grid>
-
     </div>
   )
 }

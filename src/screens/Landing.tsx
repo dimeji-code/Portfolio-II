@@ -52,7 +52,7 @@ color: #e2e9f0;
      {modalState && <SkillsPage /> } 
 
     <img src={process.env.PUBLIC_URL +"/topRight.svg"} loading='lazy' alt="alt" className=" show" style={{position:'absolute', right: '0', top:'0'}}/>
-    <img src={process.env.PUBLIC_URL + "/bottomLeft.svg"} loading='lazy' alt="alt" className="bottomImg show" style={{position:'absolute', left: '0', bottom:'0'}}/>
+    {/* <img src={process.env.PUBLIC_URL + "/bottomLeft.svg"} loading='lazy' alt="alt" className="bottomImg show" style={{position:'absolute', left: '0', bottom:'0'}}/> */}
     <div className='landingTop' 
     >
         <div style={{textAlign:'center',flex:0.7}} className="show">

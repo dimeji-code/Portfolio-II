@@ -27,11 +27,11 @@ const Header = () => {
                 <li>
                     
                 </li>
-                <div className='iconButton' onClick={()=>{}}>
+                {/* <div className='iconButton' onClick={()=>{}}> */}
                 <a className='resume' href = {process.env.PUBLIC_URL +"/resume.pdf"} target = "_blank">
                   <ArticleIcon />
                 </a>
-            </div>
+              {/* </div> */}
             </ul>
            
           {/* </div> */}
