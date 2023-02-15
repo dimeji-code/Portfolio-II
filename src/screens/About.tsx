@@ -38,7 +38,7 @@ const About = () => {
 
         <h2 className='heading'>Work Experience</h2>
        <WorkCard/>
-       <h4 id="myDescription">"My main aim for the future is to  expanding my knowledge in the tech industry and become a master at my craft. I am already learning a lot about web development, databases and automation tools, I can't wait to do more." <br/> - Dimeji
+       <h4 id="myDescription">"My main aim for the future is to  expand my knowledge in the tech industry and become a master at my craft. I am already learning a lot about web development, databases and automation tools. I can't wait to do more." <br/> - Dimeji
         </h4>
         </div> 
   )
