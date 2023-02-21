@@ -36,6 +36,7 @@ const ProjectsList = () => {
         ] 
        : 
        [
+        {image:"/Webscrape.png",title:"Soccer News Webscraper.",tools:"Python, Selenium, ElectronJS",description:"GUI that allows scraping of the latest news in the world of soccer.",rating:4.0,link:"https://github.com/dimeji-code/news-scraper",},
         {image:"/therapy.png",title:"Denas electrotherapy simulation.",tools:"C++ (Qt Creator)",description:"Simulation of special electro-therapy hardware that administers shocks to cure different ailments.",rating:3.5,link:"https://github.com/dimeji-code/Therapy-software-QT",},
         {image:"/city.png",title:"City_2 (Group project)",tools:"Processing 3",description:"An aerial-view shooter game in a city riddled with crime.",rating:3.5,link:"https://github.com/dimeji-code/City_2",},
         {image:"/quote.png",title:"Quote Tag",tools:"Swift (Xcode)",description:"Trivia game that tests knowledge on tv shows and movies by getting players to match famous quotes.",rating:4.5,link:"https://github.com/dimeji-code/Quote-Tag",},
