@@ -34,6 +34,7 @@ const ProjectsList = () => {
         {image:"/gaffer.png",title:"GAFFER (Task Management App)",tools:"MERN (MongoDB, Express, React,Node)",description:"Slack remake for group channels and collaboration.",rating:4,link:"https://projectmanager-gaffer.up.railway.app/",},       
         {image:"/slack.png",title:"Slack Clone",tools:"JS, React, Firebase, Redux",description:"Slack remake for group channels and collaboration.",rating:5,link:"https://github.com/dimeji-code/SlackDemo",},
         ] 
+        
        : 
        [
         {image:"/Webscrape.png",title:"Soccer News Webscraper.",tools:"Python, Selenium, ElectronJS",description:"GUI that allows scraping of the latest news in the world of soccer.",rating:4.0,link:"https://github.com/dimeji-code/news-scraper",},
