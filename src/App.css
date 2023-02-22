@@ -75,14 +75,7 @@
   background: no-repeat url('../public/bg4.svg');
   background-size: 100% 100%;
 }
-@media (max-width:498px) {
-  .header ul {
-    display: flex;
-    flex: 0.6;
-    justify-content: space-between; 
-  }
 
-}
 .resume{
   font-weight: 500;
   background-color: #99abc609;
@@ -419,34 +412,13 @@ h2{
   font-family: 'Roboto', sans-serif;
 }
 
-@media (max-width:685px) {
-  .proj{
-    display: none;
-  }
-  .landingTop{
-    height: 100vh;
-  }
-  .body{
-    height: 180vh;
-    overflow: scroll;
-  }
-  #myDescription,.description{
-    font-size: 14px;
-    font-family: 'Roboto', sans-serif;
-  }
-}
-@media (max-width:750px) {
-  .aboutContainer{
-    width: 95%;
 
-  }
-}
 @keyframes slidetext{
   from { 
-    transform: translateX(-120%);
+    transform: translateX(-180%);
   }
   to{
-    transform: translateX(50%);
+    transform: translateX(120%);
 
   }
 }
@@ -477,7 +449,7 @@ h2{
   justify-content: center;
   align-items: center;
   /* border: 1px solid #ccc; */
-  animation : slidetext 10s linear infinite;
+  animation : slidetext 14s linear infinite;
 }
 .qazItem{
   list-style: none;
@@ -614,4 +586,45 @@ h1 .animated-wrapper .animated-text {
 .buttoncontainer{
   display:inline-flex;
   padding: 5px;
+}
+@media (max-width:498px) {
+  .header ul {
+    display: flex;
+    flex: 0.6;
+    justify-content: space-between; 
+  }
+
+}
+@media (max-width:555px) {
+  .header ul {
+    display: flex;
+    flex: 0.6;
+    justify-content: space-between; 
+  }
+  .wrapper{
+    display: none;
+  }
+}
+@media (max-width:685px) {
+
+  .proj{
+    display: none;
+  }
+  .landingTop{
+    height: 100vh;
+  }
+  .body{
+    height: 180vh;
+    overflow: scroll;
+  }
+  #myDescription,.description{
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+  }
+}
+@media (max-width:750px) {
+  .aboutContainer{
+    width: 95%;
+
+  }
 }
