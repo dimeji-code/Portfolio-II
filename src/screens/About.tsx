@@ -39,7 +39,7 @@ const About = () => {
           I love learning about new technologies with my experience ranging from <span className='spanText'>Web Development</span> to <span className='spanText'>Automation</span>.
           From my work experience, I have had the opportunity to collaborate with talented people from different timezones. 
           </h4>
-          <div className='wrapper'>
+          {/* <div className='wrapper'>
             <ul className='qaz'>
             <li className='qazItem border'><img src={process.env.PUBLIC_URL +"/br2.png"} style={{width:'50px',height:'50px'}} /></li>
 
@@ -53,7 +53,7 @@ const About = () => {
               <li className='qazItem border'><img src={process.env.PUBLIC_URL +"/br2.png"} style={{width:'50px',height:'50px'}} /></li>
 
             </ul>           
-          </div>
+          </div> */}
           <h4 className='h4Description'>I am currently looking for a new role. Feel free to reach out.</h4>
           <div className="buttoncontainer">
             <a target = "_blank" className='button darkbutton' href='https://www.linkedin.com/in/dimejisitu-4ba2b1211/'>Linkedin <LinkedInIcon/></a>
