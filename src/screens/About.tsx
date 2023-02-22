@@ -41,15 +41,18 @@ const About = () => {
           </h4>
           <div className='wrapper'>
             <ul className='qaz'>
+            <li className='qazItem border'><img src={process.env.PUBLIC_URL +"/br2.png"} style={{width:'50px',height:'50px'}} /></li>
+
               <li className='qazItem spanText'>Frontend Development</li>
-              <li className='qazItem border'></li>
+              <li className='qazItem border'><img src={process.env.PUBLIC_URL +"/br.png"} style={{width:'50px',height:'50px'}} /></li>
               <li className='qazItem spanText'>Backend Development</li>
-              <li className='qazItem border'></li>
+              <li className='qazItem border'><img src={process.env.PUBLIC_URL +"/br2.png"} style={{width:'50px',height:'50px'}} /></li>
               <li className='qazItem spanText'>Automation</li>
-              <li className='qazItem border'></li>
+              <li className='qazItem border'><img src={process.env.PUBLIC_URL +"/br.png"} style={{width:'50px',height:'50px'}} /></li>
               <li className='qazItem spanText'>Software Development</li>
-              <li className='qazItem border'></li>
-            </ul>
+              <li className='qazItem border'><img src={process.env.PUBLIC_URL +"/br2.png"} style={{width:'50px',height:'50px'}} /></li>
+
+            </ul>           
           </div>
           <h4 className='h4Description'>I am currently looking for a new role. Feel free to reach out.</h4>
           <div className="buttoncontainer">

@@ -443,7 +443,7 @@ h2{
 }
 @keyframes slidetext{
   from { 
-    transform: translateX(-100%);
+    transform: translateX(-120%);
   }
   to{
     transform: translateX(50%);
@@ -451,10 +451,11 @@ h2{
   }
 }
 .border{
-  border-left: 0.5px solid #6a6767c9;
+  /* border-left: 0.5px solid #6a6767c9; */
   /* border-right: 0.5px solid #6a6767c9; */
   width:15px;
   height:50px;
+  object-fit:contain;
 }
 .wrapper {
   display: flex;
@@ -471,12 +472,12 @@ h2{
 }
 .qaz{
   list-style: none;
-  width: 200%;
+  width: 250%;
   display :flex;
   justify-content: center;
   align-items: center;
   /* border: 1px solid #ccc; */
-  animation : slidetext 8s linear infinite;
+  animation : slidetext 10s linear infinite;
 }
 .qazItem{
   list-style: none;
@@ -484,7 +485,7 @@ h2{
   font-family: 'Roboto', sans-serif;
   font-size:28px;
   font-weight: 600;
-  margin:5px 15px;
+  margin:5px 25px;
 }
 /* /// */
 @keyframes move3 {
